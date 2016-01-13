@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto';
+  background: #001355;
+  color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  min-height: 100vh;
+  padding: 50px 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.search-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 40px;
+  padding: 0 20px;
+  border: none;
+  background-color: rgba(255,255,255,0.1);
+  border: 2px solid rgba(255, 255, 255, 0);
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+    font-weight: 300;
+}
+
+input:focus {
+  outline: 0;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 35px -5px #4082f5;
+  /*#4082f5;rgba(255,255,255,0.3)*/
+}
+
+button {
+  margin-top: 50px;
+  height: 40px;
+  width: 100%;
+  background-color: #1161ed;
+  border: none;
+  margin: 50px auto 0;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.5s ease-in-out;
+}
+
+button:hover {
+  background: #4082f5;
+  box-shadow: 0px 4px 35px -5px #4082f5;
+}
+
+.data {
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  min-height: 100px;
+  background: #fff;
+  color: #342224;
+border: 5px solid #fff;
+transition: 0.3s ease;
+  margin: 20px 0;
+}
+
+/*display black border on the inside of the container*/
+.card-container:hover {
+-webkit-box-shadow:inset 0px 0px 0px 10px #342224;
+-moz-box-shadow:inset 0px 0px 0px 10px #342224;
+box-shadow:inset 5px 0px 0px 0px #342224;
+}
+
+.card {
+  min-height: 100%;
+  min-width: 100%;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.suggestions:after {
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border-color: #fff transparent transparent transparent;
+  border-width: 10px;
+  border-style: solid;
+  display: block;
+  content: "";
+  transform: rotate(180deg);
+}
+
+.suggestions {
+  margin-top: 5px;
+  position: relative;
+  width: 100%;
+  background: #fff;
+  color: #342224;
+  padding: 10px 20px;
+  display: flex;
+  flex-flow: column;
+  display: none;
+}
+
+.suggestions p:hover {
+  cursor: pointer;
+  color: #3884de;
+  text-decoration: underline;
+}
+
+::-webkit-input-placeholder {
+   color: rgba(255,255,255,0.5);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba(255,255,255,0.5);
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(255,255,255,0.5);
+}
+
+:-ms-input-placeholder {
+   color:rgba(255,255,255,0.5);
+}
