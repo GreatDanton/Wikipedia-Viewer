@@ -112,12 +112,12 @@ box-shadow:inset 5px 0px 0px 0px #342224;
 
 .suggestions:after {
   position: absolute;
-  top: -20px;
+  top: -25px;
   left: 30px;
   width: 0;
   height: 0;
   border-color: #fff transparent transparent transparent;
-  border-width: 10px;
+  border-width: 15px;
   border-style: solid;
   display: block;
   content: "";
